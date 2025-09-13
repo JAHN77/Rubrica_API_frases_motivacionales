@@ -33,7 +33,7 @@ api_frases_motivacionales
 1. Clonar el repositorio:
 ```bash
    git clone https://github.com/JAHN77/Rubrica_API_frases_motivacionales.git
-   cd api_conversiones
+   cd Rubrica_API_frases_motivacionales
 ```
 2. Instalar dependencias:
 ``` bash
