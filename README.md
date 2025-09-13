@@ -46,12 +46,37 @@ node src/app.js
 ```
 
 # 🚀 Uso
-1. Selecciona la categoría de conversión:
-2. Temperatura: Celsius, Fahrenheit, Kelvin
-3. Longitud: Metros, Kilómetros, Centímetros, Millas, Pies, Pulgadas
-4. Elige la unidad de origen en el primer bloque.
-5. Elige la unidad de destino en el segundo bloque.
-6. Ingresa un valor en uno de los inputs y automáticamente se reflejará la conversión en el otro input.
+1. Obtener todas las frases
+```bash
+GET http://localhost:3001/random/quotes
+```
+2. Agreagr una nueva frase:
+```bash
+POST http://localhost:3001/random/quotes
+```
+* Body:
+```bash
+{
+  "phrase": "El éxito es la suma de pequeños esfuerzos repetidos día tras día."
+}
+```
+
+* Respuesta:
+```bash
+"frase creada exitosamente!"
+```
+3. Eliminar frase por ID:
+```bash
+DELETE http://localhost:3001/random/quotes/:id
+```
+* Respuesta:
+```bash
+"Frase no encontrada" 
+O
+"Frase eliminada exitosamente"
+
+```
+
 
 
 ## Author
